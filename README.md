@@ -1,2 +1,0 @@
-# AIL-Infobot
-AIL Infobot
