@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 Allama Iqbal Library InfoBot</title>
+<style>
+  body { font-family: Arial, sans-serif; background-color: #f2f4f7; margin: 0; padding: 0; display: flex; justify-content: center; }
+  .chatbot-container { width: 95%; max-width: 800px; background: #fff; margin: 20px 0; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); overflow: hidden; }
+  .chatbot-header { background: #2c3e50; color: #fff; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+  .chatbot-body { padding: 20px; }
+  .faq-item { margin-bottom: 10px; }
+  .faq-question { font-weight: bold; padding: 10px; background: #ecf0f1; border-radius: 8px; cursor: pointer; }
+  .faq-question:hover { background: #d0d7de; }
+  .faq-answer { display: none; padding: 10px 15px; margin-top: 5px; border-left: 3px solid #2c3e50; background: #f7f9fb; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<div class="chatbot-container">
+  <div class="chatbot-header">📚 Allama Iqbal Library InfoBot</div>
+  <div class="chatbot-body">
+
+    <!-- Q&A items start -->
+    <div class="faq-item"><div class="faq-question">Q1. What is the Allama Iqbal Library (AIL)?</div><div class="faq-answer">It is the central Library of the University of Kashmir, established in 1948.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q2. Where is the Library located?</div><div class="faq-answer">Main campus of the University of Kashmir, Hazratbal, Srinagar-190006.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q3. What is the Library’s working hours?</div><div class="faq-answer">Summers:<br>• Monday – Friday: 08.30 A.M to 07.00 P.M<br>• Saturdays/Sundays/Holidays: 10.00 A.M to 04.00 P.M<br>Winters:<br>• Monday – Friday: 09.30 A.M to 05.30 P.M<br>• Saturdays/Sundays/Holidays: 10.00 A.M to 04.00 P.M<br>Note: The 24x7 Library Reading Hall remains open round the clock.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q4. Does the Library have a mobile app?</div><div class="faq-answer">Yes — Ku eLibrary platform.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q5. Is there WiFi or internet access inside AIL?</div><div class="faq-answer">Yes — network access for e-resources and computers. Users can connect laptops or smartphones to Wi-Fi.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q6. Is there a browsing center where computers are available for the users?</div><div class="faq-answer">Yes.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q7. Does the Library have a 24×7 reading room facility?</div><div class="faq-answer">Yes, the 24×7 reading room remains open year-round (except notified days), offering wide reading areas. Daily local, national, and selected international newspapers are also available.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q8. Are locker facilities available in the Library?</div><div class="faq-answer">Yes — especially for the 24×7 reading room.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q9. Who can use the Library?</div><div class="faq-answer">Teaching, non-teaching staff, scholars, and students of the University of Kashmir, having a valid identity card issued by the Library. External or temporary memberships may also be provided under specific rules.</div></div>
+
+    <div class="faq-item"><div class="faq-question">Q10. What is a Temporary Membership?</div><div class="faq-answer">The temporary membership is provided to non-regular users (externals) for a limited period (initially one month, extendable to three months), subject to space & behavior.</div></div>
+
+    <!-- Continue same pattern for Q11–Q72 -->
+    
+  </div>
+</div>
+
+<script>
+  const questions = document.querySelectorAll('.faq-question');
+  questions.forEach(q => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
